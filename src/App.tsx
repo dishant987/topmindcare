@@ -9,7 +9,7 @@ import { ThemeProvider } from "./components/ui/theme-provider";
 const App = () => {
   return (
     <TooltipProvider>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <Toaster />
         <Sonner />
         <BrowserRouter>
