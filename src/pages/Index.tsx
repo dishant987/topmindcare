@@ -29,7 +29,7 @@ const Index = () => {
       <main>
         <HeroSection onStartTrial={handleStartTrial} />
         <FeaturesSection />
-        <ProgramsSection onStartTrial={handleStartTrial} />
+        <ProgramsSection />
         <Features />
         <WhyChoose />
         <PricingSection onStartTrial={handleStartTrial} />

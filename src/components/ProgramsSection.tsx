@@ -2,10 +2,6 @@ import { useEffect, useRef } from "react";
 import kidsGroupImage from "@/assets/kids-meditation-group.jpg";
 import teenImage from "@/assets/teen-meditation.jpg";
 
-interface ProgramsSectionProps {
-  onStartTrial: () => void;
-}
-
 const programs = [
   {
     title: "Little Explorers (4-6)",
@@ -30,7 +26,7 @@ const programs = [
   },
 ];
 
-const ProgramsSection = ({ onStartTrial }: ProgramsSectionProps) => {
+const ProgramsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   // Simple scroll animation effect
