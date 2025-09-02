@@ -19,6 +19,21 @@ const Header = ({ onStartTrial }: HeaderProps) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 👇 Close drawer when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) setMenuOpen(false);
+    };
+
+    if (menuOpen) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [menuOpen]);
+
   const navItems = ["Why", "Programs", "Features", "For Parents", "FAQ"];
   const navIds = ["why", "programs", "features", "for-parents", "faq"];
 
