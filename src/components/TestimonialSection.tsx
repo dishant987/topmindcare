@@ -26,7 +26,7 @@ const TestimonialSection = () => {
             className="flex-1 bg-white dark:bg-gray-800 rounded-2xl shadow-md dark:shadow-lg border border-slate-100 dark:border-gray-700 p-6 transform transition-transform duration-300 hover:scale-105"
           >
             <div className="flex items-center mb-3">
-              {"★★★★★".split("").map((i, starIdx) => (
+              {"★★★★★".split("").map(( starIdx) => (
                 <span
                   key={starIdx}
                   className="text-yellow-500 dark:text-yellow-400 text-base mr-1"
